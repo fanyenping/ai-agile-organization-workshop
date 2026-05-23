@@ -1,0 +1,1586 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI敏捷組織行動原則工作坊｜2026共創記錄</title>
+  <meta name="description" content="AI敏捷組織行動原則工作坊分頁式內容網站，將現場照片穿插於AI環境掃描、未來趨勢、敏捷延伸，以及2026 AI敏捷組織八項行動原則。">
+  <meta name="theme-color" content="#101820">
+  <meta property="og:title" content="AI敏捷組織行動原則工作坊｜2026共創記錄">
+  <meta property="og:description" content="從環境掃描、未來情境到行動原則，凝聚2026 AI敏捷組織的共同準則。">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="zh_TW">
+  <meta property="og:image" content="assets/photos/LINE_ALBUM_2026523_260523_10.jpg">
+  <style>
+    :root {
+      --paper: #f6f0e6;
+      --paper-2: #fffaf1;
+      --ink: #101820;
+      --ink-soft: #28343d;
+      --muted: #63717d;
+      --line: rgba(16, 24, 32, .14);
+      --glass: rgba(255, 255, 255, .64);
+      --glass-strong: rgba(255, 255, 255, .78);
+      --glass-line: rgba(255, 255, 255, .68);
+      --teal: #04756f;
+      --cyan: #0c8fa5;
+      --coral: #e95c47;
+      --gold: #b6852b;
+      --acid: #cde64d;
+      --blue: #2458d3;
+      --plum: #6f4a8e;
+      --shadow: 0 22px 60px rgba(16, 24, 32, .14);
+      --soft-shadow: 0 12px 34px rgba(16, 24, 32, .09);
+      --radius: 8px;
+      --max: 1180px;
+      --sans: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --serif: Georgia, "Times New Roman", "Noto Serif TC", serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        linear-gradient(90deg, rgba(16, 24, 32, .045) 1px, transparent 1px) 0 0 / 40px 40px,
+        linear-gradient(0deg, rgba(16, 24, 32, .035) 1px, transparent 1px) 0 0 / 40px 40px,
+        linear-gradient(180deg, rgba(255, 255, 255, .82), rgba(246, 240, 230, .96)),
+        var(--paper);
+      font-family: var(--sans);
+      line-height: 1.72;
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background:
+        linear-gradient(124deg, rgba(4, 117, 111, .12), transparent 34%),
+        linear-gradient(302deg, rgba(233, 92, 71, .1), transparent 30%),
+        linear-gradient(16deg, rgba(36, 88, 211, .08), transparent 36%);
+      pointer-events: none;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    a {
+      color: inherit;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 3px;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    #codex-browser-sidebar-comments-root {
+      pointer-events: none !important;
+    }
+
+    .skip-link {
+      position: absolute;
+      left: 16px;
+      top: 16px;
+      z-index: 50;
+      transform: translateY(-160%);
+      padding: 10px 14px;
+      color: #fff;
+      background: var(--ink);
+      border-radius: 999px;
+      font-weight: 800;
+    }
+
+    .skip-link:focus {
+      transform: translateY(0);
+    }
+
+    .hero {
+      position: relative;
+      min-height: 720px;
+      color: #fff;
+      overflow: hidden;
+      background: var(--ink);
+    }
+
+    .hero-photo {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: grayscale(.08) contrast(1.06) saturate(.92);
+      opacity: .7;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background:
+        linear-gradient(90deg, rgba(16, 24, 32, .96) 0%, rgba(16, 24, 32, .8) 48%, rgba(16, 24, 32, .3) 100%),
+        linear-gradient(180deg, transparent 0%, rgba(16, 24, 32, .72) 100%);
+    }
+
+    .hero::after {
+      content: "2026";
+      position: absolute;
+      right: 36px;
+      bottom: 28px;
+      z-index: 2;
+      color: rgba(255, 255, 255, .16);
+      font-family: var(--serif);
+      font-size: 9rem;
+      font-weight: 900;
+      line-height: .8;
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 3;
+      width: min(var(--max), calc(100% - 40px));
+      min-height: inherit;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(310px, .48fr);
+      gap: 54px;
+      align-items: end;
+      padding: 54px 0 44px;
+    }
+
+    .issue-label,
+    .kicker,
+    .eyebrow {
+      letter-spacing: 0;
+    }
+
+    .issue-label {
+      display: inline-flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 22px;
+      color: rgba(255, 255, 255, .88);
+      font-size: .82rem;
+      font-weight: 900;
+    }
+
+    .issue-label::before {
+      content: "";
+      width: 44px;
+      height: 2px;
+      background: var(--acid);
+    }
+
+    h1,
+    h2,
+    h3,
+    .serif {
+      font-family: var(--serif);
+    }
+
+    h1 {
+      max-width: 900px;
+      margin: 0;
+      font-size: 5.8rem;
+      line-height: .94;
+      letter-spacing: 0;
+    }
+
+    .hero-copy {
+      max-width: 790px;
+      margin: 24px 0 0;
+      color: rgba(255, 255, 255, .86);
+      font-size: 1.25rem;
+      line-height: 1.8;
+    }
+
+    .hero-metadata {
+      min-height: 545px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 24px;
+      border: 1px solid rgba(255, 255, 255, .24);
+      border-radius: var(--radius);
+      background:
+        linear-gradient(145deg, rgba(255, 255, 255, .13), rgba(255, 255, 255, .04)),
+        rgba(16, 24, 32, .56);
+      -webkit-backdrop-filter: blur(22px) saturate(1.18);
+      backdrop-filter: blur(22px) saturate(1.18);
+      box-shadow: 0 30px 70px rgba(0, 0, 0, .24), inset 0 1px 0 rgba(255, 255, 255, .2);
+    }
+
+    .masthead {
+      display: grid;
+      gap: 8px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid rgba(255, 255, 255, .18);
+    }
+
+    .masthead strong {
+      font-size: .9rem;
+    }
+
+    .masthead span {
+      color: rgba(255, 255, 255, .72);
+      font-size: .86rem;
+    }
+
+    .hero-stat {
+      display: grid;
+      gap: 18px;
+      margin: 26px 0;
+    }
+
+    .stat-item {
+      display: grid;
+      grid-template-columns: 74px minmax(0, 1fr);
+      gap: 14px;
+      align-items: start;
+    }
+
+    .stat-number {
+      color: var(--acid);
+      font-family: var(--serif);
+      font-size: 2.45rem;
+      font-weight: 900;
+      line-height: .9;
+    }
+
+    .stat-item p {
+      margin: 0;
+      color: rgba(255, 255, 255, .82);
+      font-size: .95rem;
+    }
+
+    .hero-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-top: auto;
+    }
+
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 32px;
+      padding: 5px 10px;
+      border: 1px solid rgba(255, 255, 255, .23);
+      border-radius: 999px;
+      color: rgba(255, 255, 255, .9);
+      background: rgba(255, 255, 255, .08);
+      font-size: .8rem;
+      font-weight: 800;
+    }
+
+    .nav-shell {
+      position: sticky;
+      top: 0;
+      z-index: 30;
+      border-bottom: 1px solid rgba(255, 255, 255, .6);
+      background: rgba(246, 240, 230, .78);
+      -webkit-backdrop-filter: blur(20px) saturate(1.18);
+      backdrop-filter: blur(20px) saturate(1.18);
+      box-shadow: 0 10px 34px rgba(16, 24, 32, .08);
+    }
+
+    .tabbar {
+      width: min(var(--max), calc(100% - 36px));
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      overflow-x: auto;
+      padding: 12px 0;
+      scrollbar-width: none;
+    }
+
+    .tabbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .tab {
+      flex: 0 0 auto;
+      min-height: 42px;
+      border: 1px solid transparent;
+      border-radius: 999px;
+      padding: 9px 14px;
+      color: var(--ink-soft);
+      background: rgba(255, 255, 255, .28);
+      cursor: pointer;
+      font-weight: 900;
+    }
+
+    .tab:hover {
+      border-color: rgba(255, 255, 255, .78);
+      background: rgba(255, 255, 255, .58);
+    }
+
+    .tab[aria-selected="true"] {
+      color: #fff;
+      background: rgba(16, 24, 32, .94);
+      border-color: rgba(255, 255, 255, .28);
+      box-shadow: 0 10px 24px rgba(16, 24, 32, .18), inset 0 1px 0 rgba(255, 255, 255, .18);
+    }
+
+    .tab:focus-visible,
+    .action-link:focus-visible,
+    .skip-link:focus-visible {
+      outline: 3px solid rgba(36, 88, 211, .42);
+      outline-offset: 3px;
+    }
+
+    main {
+      width: min(var(--max), calc(100% - 40px));
+      margin: 0 auto;
+      padding: 30px 0 74px;
+    }
+
+    .panel {
+      display: none;
+    }
+
+    .panel.active {
+      display: block;
+    }
+
+    .section-head {
+      position: relative;
+      display: grid;
+      grid-template-columns: minmax(0, .92fr) minmax(280px, .42fr);
+      gap: 24px;
+      align-items: end;
+      margin: 0 0 22px;
+      padding: 24px;
+      border: 1px solid rgba(255, 255, 255, .56);
+      border-bottom: 2px solid rgba(16, 24, 32, .72);
+      border-radius: var(--radius);
+      background:
+        linear-gradient(135deg, rgba(255, 255, 255, .78), rgba(255, 250, 241, .48)),
+        var(--glass);
+      -webkit-backdrop-filter: blur(16px) saturate(1.1);
+      backdrop-filter: blur(16px) saturate(1.1);
+      box-shadow: 0 18px 48px rgba(16, 24, 32, .08), inset 0 1px 0 rgba(255, 255, 255, .72);
+    }
+
+    .kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 10px;
+      color: var(--teal);
+      font-size: .82rem;
+      font-weight: 950;
+    }
+
+    .kicker::before {
+      content: "";
+      width: 30px;
+      height: 2px;
+      background: var(--ink);
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 3.45rem;
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+
+    .section-deck {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.05rem;
+      line-height: 1.8;
+    }
+
+    .grid {
+      display: grid;
+      gap: 18px;
+    }
+
+    .two {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .three {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .four {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .card,
+    .feature-card,
+    .table-card,
+    .principle,
+    .canvas-cell,
+    .time-row,
+    .quote-card {
+      position: relative;
+      overflow: hidden;
+      border: 1px solid var(--glass-line);
+      border-radius: var(--radius);
+      background:
+        linear-gradient(145deg, rgba(255, 255, 255, .78), rgba(255, 250, 241, .5)),
+        var(--glass);
+      -webkit-backdrop-filter: blur(18px) saturate(1.14);
+      backdrop-filter: blur(18px) saturate(1.14);
+      box-shadow: var(--soft-shadow), inset 0 1px 0 rgba(255, 255, 255, .74);
+    }
+
+    .card::before,
+    .feature-card::before,
+    .table-card::before,
+    .principle::before,
+    .canvas-cell::before,
+    .time-row::before,
+    .quote-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background:
+        linear-gradient(110deg, rgba(255, 255, 255, .44), transparent 42%),
+        linear-gradient(0deg, transparent 0 96%, rgba(16, 24, 32, .06) 96%);
+      opacity: .7;
+    }
+
+    .card,
+    .canvas-cell,
+    .principle {
+      padding: 22px;
+    }
+
+    .feature-image {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+      filter: contrast(1.04) saturate(.95);
+    }
+
+    .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .photo-card {
+      position: relative;
+      overflow: hidden;
+      min-height: 260px;
+      grid-column: span 4;
+      border: 1px solid var(--glass-line);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, .48);
+      box-shadow: var(--soft-shadow);
+    }
+
+    .photo-card.wide {
+      grid-column: span 8;
+    }
+
+    .photo-card.full {
+      grid-column: span 12;
+      min-height: 360px;
+    }
+
+    .photo-card.tall {
+      grid-row: span 2;
+      min-height: 540px;
+    }
+
+    .photo-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: contrast(1.03) saturate(.95);
+    }
+
+    .photo-card figcaption {
+      position: absolute;
+      left: 12px;
+      right: 12px;
+      bottom: 12px;
+      z-index: 2;
+      padding: 9px 11px;
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, .22);
+      border-radius: var(--radius);
+      background: rgba(16, 24, 32, .62);
+      -webkit-backdrop-filter: blur(14px) saturate(1.12);
+      backdrop-filter: blur(14px) saturate(1.12);
+      font-size: .9rem;
+      font-weight: 800;
+    }
+
+    .feature-body {
+      padding: 22px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--coral);
+      font-size: .78rem;
+      font-weight: 950;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      background: currentColor;
+      border-radius: 50%;
+    }
+
+    h3 {
+      margin: 8px 0 10px;
+      font-size: 1.75rem;
+      line-height: 1.14;
+      letter-spacing: 0;
+    }
+
+    h4 {
+      margin: 0 0 8px;
+      font-size: 1rem;
+      letter-spacing: 0;
+    }
+
+    p {
+      margin: 0 0 12px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul,
+    ol {
+      margin: 10px 0 0;
+      padding-left: 20px;
+    }
+
+    li {
+      margin: 7px 0;
+    }
+
+    .lead-card {
+      display: grid;
+      grid-template-columns: 92px minmax(0, 1fr);
+      gap: 18px;
+      align-items: start;
+      padding: 24px;
+      color: #fff;
+      background: var(--ink);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .issue-number {
+      color: var(--acid);
+      font-family: var(--serif);
+      font-size: 3.9rem;
+      font-weight: 900;
+      line-height: .82;
+    }
+
+    .lead-card h3 {
+      color: #fff;
+      margin-top: 0;
+    }
+
+    .lead-card p,
+    .lead-card li {
+      color: rgba(255, 255, 255, .82);
+    }
+
+    .quote-card {
+      padding: 24px;
+      border-left: 7px solid var(--coral);
+      background:
+        linear-gradient(135deg, rgba(255, 255, 255, .76), rgba(255, 242, 206, .68)),
+        rgba(255, 248, 220, .7);
+      font-size: 1.18rem;
+      font-weight: 900;
+      line-height: 1.7;
+    }
+
+    .principle-strip {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 1px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, .56);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, .4);
+      -webkit-backdrop-filter: blur(16px) saturate(1.12);
+      backdrop-filter: blur(16px) saturate(1.12);
+      box-shadow: var(--shadow);
+    }
+
+    .principle {
+      min-height: 220px;
+      border-radius: 0;
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, .68);
+    }
+
+    .principle strong {
+      display: block;
+      margin-bottom: 14px;
+      color: var(--gold);
+      font-family: var(--serif);
+      font-size: 2.65rem;
+      line-height: .85;
+    }
+
+    .principle:nth-child(2n) strong {
+      color: var(--teal);
+    }
+
+    .principle:nth-child(3n) strong {
+      color: var(--coral);
+    }
+
+    .timeline {
+      display: grid;
+      gap: 14px;
+    }
+
+    .time-row {
+      display: grid;
+      grid-template-columns: 124px minmax(0, 1fr);
+      gap: 16px;
+      padding: 18px;
+    }
+
+    .time-row b {
+      color: var(--teal);
+      font-size: .95rem;
+    }
+
+    .time-row p {
+      margin: 0;
+    }
+
+    .table-card {
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 760px;
+    }
+
+    th,
+    td {
+      padding: 14px 13px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      color: #fff;
+      background: rgba(16, 24, 32, .94);
+      font-size: .86rem;
+      letter-spacing: 0;
+    }
+
+    td {
+      background: rgba(255, 255, 255, .34);
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .canvas-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .canvas-cell {
+      min-height: 166px;
+      border-style: dashed;
+      background:
+        linear-gradient(180deg, rgba(255, 255, 255, .7), rgba(255, 250, 241, .58)),
+        repeating-linear-gradient(0deg, transparent, transparent 31px, rgba(16, 24, 32, .06) 32px),
+        rgba(255, 250, 241, .58);
+    }
+
+    .canvas-cell h4 {
+      color: var(--teal);
+    }
+
+    .action-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      width: fit-content;
+      margin-top: 8px;
+      padding: 9px 14px;
+      color: #fff;
+      background: var(--ink);
+      border-radius: 999px;
+      font-weight: 900;
+      text-decoration: none;
+    }
+
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .mini-badge {
+      display: inline-flex;
+      align-items: center;
+      min-height: 30px;
+      padding: 4px 10px;
+      border: 1px solid rgba(16, 24, 32, .12);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, .54);
+      color: var(--ink-soft);
+      font-size: .82rem;
+      font-weight: 800;
+    }
+
+    .note {
+      color: var(--muted);
+      font-size: .95rem;
+    }
+
+    .section-spacer {
+      margin-top: 18px;
+    }
+
+    .footer {
+      width: min(var(--max), calc(100% - 40px));
+      margin: 0 auto;
+      padding: 26px 0 42px;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+      font-size: .9rem;
+    }
+
+    @media (max-width: 980px) {
+      .hero {
+        min-height: auto;
+      }
+
+      .hero-inner,
+      .section-head,
+      .two,
+      .three,
+      .four,
+      .photo-grid,
+      .canvas-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .photo-card,
+      .photo-card.wide,
+      .photo-card.full,
+      .photo-card.tall {
+        grid-column: auto;
+        min-height: 260px;
+      }
+
+      .hero-inner {
+        padding: 42px 0 34px;
+      }
+
+      .hero-metadata {
+        min-height: auto;
+      }
+
+      .principle-strip {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      h1 {
+        font-size: 4.2rem;
+      }
+
+      h2 {
+        font-size: 2.7rem;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .hero-inner,
+      main,
+      .footer {
+        width: calc(100% - 28px);
+      }
+
+      .tabbar {
+        width: calc(100% - 24px);
+      }
+
+      h1 {
+        font-size: 3.15rem;
+      }
+
+      h2 {
+        font-size: 2.2rem;
+      }
+
+      h3 {
+        font-size: 1.45rem;
+      }
+
+      .hero-copy {
+        font-size: 1.05rem;
+      }
+
+      .hero::after {
+        font-size: 5.2rem;
+        right: 16px;
+      }
+
+      .lead-card,
+      .time-row,
+      .stat-item {
+        grid-template-columns: 1fr;
+      }
+
+      .principle-strip {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#content">跳到內容</a>
+
+  <header class="hero">
+    <img class="hero-photo" src="assets/photos/LINE_ALBUM_2026523_260523_10.jpg" alt="AI敏捷組織行動原則工作坊參與者合照">
+    <div class="hero-inner">
+      <div>
+        <p class="issue-label"><span>Workshop Record / AI Agile Organization</span></p>
+        <h1>AI敏捷組織行動原則工作坊</h1>
+        <p class="hero-copy">在 AI 重構工作、決策與責任邊界的時代，以敏捷精神回應不確定性；從環境掃描到未來情境，凝聚 2026 AI敏捷組織的共同行動原則。</p>
+      </div>
+      <aside class="hero-metadata" aria-label="工作坊摘要">
+        <div class="masthead">
+          <strong>2026 共創版</strong>
+          <span>一核心三原則，八項 AI敏捷組織行動原則</span>
+        </div>
+        <div class="hero-stat">
+          <div class="stat-item">
+            <span class="stat-number">03</span>
+            <p>AI環境掃描與洞察、AI環境未來趨勢、AI敏捷組織行動原則聚焦。</p>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">08</span>
+            <p>核心價值、決策、協作、治理四類行動原則，可直接轉為組織導入檢核。</p>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">AI</span>
+            <p>收錄現場照片、卡片牆、情境矩陣與最終共創成果。</p>
+          </div>
+        </div>
+        <div class="hero-tags" aria-label="工作坊關鍵字">
+          <span class="tag">AI × 敏捷</span>
+          <span class="tag">工作坊共創</span>
+          <span class="tag">情境規劃</span>
+          <span class="tag">資料治理</span>
+          <span class="tag">人為結果負責</span>
+        </div>
+      </aside>
+    </div>
+  </header>
+
+  <nav class="nav-shell" aria-label="內容分頁">
+    <div class="tabbar" role="tablist" aria-label="工作坊內容分頁">
+      <button class="tab" id="tab-cover" role="tab" type="button" aria-selected="true" aria-controls="panel-cover" data-target="cover">封面總覽</button>
+      <button class="tab" id="tab-context" role="tab" type="button" aria-selected="false" aria-controls="panel-context" data-target="context" tabindex="-1">工作坊脈絡</button>
+      <button class="tab" id="tab-scan" role="tab" type="button" aria-selected="false" aria-controls="panel-scan" data-target="scan" tabindex="-1">01 掃描洞察</button>
+      <button class="tab" id="tab-future" role="tab" type="button" aria-selected="false" aria-controls="panel-future" data-target="future" tabindex="-1">02 未來趨勢</button>
+      <button class="tab" id="tab-principles" role="tab" type="button" aria-selected="false" aria-controls="panel-principles" data-target="principles" tabindex="-1">2026 原則</button>
+      <button class="tab" id="tab-agile" role="tab" type="button" aria-selected="false" aria-controls="panel-agile" data-target="agile" tabindex="-1">敏捷延伸</button>
+    </div>
+  </nav>
+
+  <main id="content">
+    <section class="panel active" id="panel-cover" role="tabpanel" aria-labelledby="tab-cover" tabindex="0">
+      <div class="section-head">
+        <div>
+          <p class="kicker">Cover Story</p>
+          <h2>從工具焦慮，到組織行動準則。</h2>
+        </div>
+        <p class="section-deck">本網站整理「AI敏捷組織行動原則工作坊」的流程、現場共創與成果，聚焦 2026 AI敏捷組織行動原則的形成脈絡與八項行動準則。</p>
+      </div>
+
+      <div class="grid two">
+        <article class="lead-card">
+          <div class="issue-number">Q</div>
+          <div>
+            <h3>核心問題</h3>
+            <p>當 AI 進入日常工作、管理決策、服務設計、產品開發與團隊協作，組織如何保持敏捷、負責、有人味，並把不確定性轉成可落地的行動？</p>
+          </div>
+        </article>
+        <article class="feature-card">
+          <img class="feature-image" src="assets/photos/LINE_ALBUM_2026523_260523_2.jpg" alt="工作坊小組圍桌討論 AI 敏捷組織議題">
+          <div class="feature-body">
+            <span class="eyebrow">Final Output</span>
+            <h3>2026 AI敏捷組織行動原則</h3>
+            <p>本次共創收斂為核心價值、決策原則、協作原則與 AI治理原則，共八項可實踐的組織準則。</p>
+          </div>
+        </article>
+      </div>
+
+      <div class="principle-strip section-spacer">
+        <article class="principle">
+          <strong>01</strong>
+          <h4>AI環境掃描與洞察</h4>
+          <p>以卡片法整理全球趨勢、台灣產業政策、企業團隊現況，從事件轉成關鍵洞察。</p>
+        </article>
+        <article class="principle">
+          <strong>02</strong>
+          <h4>AI環境未來趨勢</h4>
+          <p>以情境規劃討論變革速度、智慧重構、組織重構與人機協作的不同未來。</p>
+        </article>
+        <article class="principle">
+          <strong>03</strong>
+          <h4>AI敏捷行動原則聚焦</h4>
+          <p>回到組織協作、資安、資料治理與責任歸屬，將情境推導成行動原則。</p>
+        </article>
+        <article class="principle">
+          <strong>04</strong>
+          <h4>共識定稿</h4>
+          <p>分組草擬、全體修訂、語義校準，形成今日可對外發布的工作坊共創版。</p>
+        </article>
+      </div>
+
+      <div class="quote-card section-spacer">
+        AI加速效率，人守護價值。人定義價值，AI放大效益。
+      </div>
+
+      <div class="photo-grid section-spacer" aria-label="工作坊封面現場照片">
+        <figure class="photo-card wide">
+          <img src="assets/photos/S__28164116_0.jpg" alt="參與者在完整卡片牆前合影與互動">
+          <figcaption>從掃描到原則，保留現場共創的集體痕跡。</figcaption>
+        </figure>
+        <figure class="photo-card">
+          <img src="assets/photos/LINE_ALBUM_2026523_260523_11.jpg" alt="工作坊成員拿著對話標語與卡片牆合照">
+          <figcaption>同理、探詢與平等對話，是整場工作坊的底層規範。</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="panel" id="panel-context" role="tabpanel" aria-labelledby="tab-context" tabindex="0">
+      <div class="section-head">
+        <div>
+          <p class="kicker">Why This Workshop</p>
+          <h2>AI × 敏捷，需要的不只是工具清單。</h2>
+        </div>
+        <p class="section-deck">工作坊從對話影響力、敏捷社群、企業導入、政策治理與新創實務交會而來。它不是單純討論 AI 能做什麼，而是討論組織如何共同決定什麼值得做、如何做、誰負責。</p>
+      </div>
+
+      <div class="grid three">
+        <article class="card">
+          <span class="eyebrow">Dialogue</span>
+          <h3>平等參與</h3>
+          <p>討論規範以平等發言、同理傾聽、揭示假設為基礎，避免單一人主導，也避免過早把分歧壓成假共識。</p>
+        </article>
+        <article class="card">
+          <span class="eyebrow">Agile</span>
+          <h3>從流程到文化</h3>
+          <p>參與者關注 AI 與敏捷如何整合到價值、流程、文化與落地實驗，而不是只把 AI 加到既有流程表面。</p>
+        </article>
+        <article class="card">
+          <span class="eyebrow">Health</span>
+          <h3>高風險議題</h3>
+          <p>資安、個資與治理使「速度」不能單獨成為成功指標；責任、合規、品質與人的溫度同樣重要。</p>
+        </article>
+      </div>
+
+      <div class="photo-grid section-spacer" aria-label="工作坊脈絡現場照片">
+        <figure class="photo-card wide">
+          <img src="assets/photos/LINE_ALBUM_2026523_260523_2.jpg" alt="小組圍桌討論AI敏捷組織議題">
+          <figcaption>分組討論與觀點交換，把個人經驗轉成可被共創的脈絡。</figcaption>
+        </figure>
+        <figure class="photo-card">
+          <img src="assets/photos/LINE_ALBUM_2026523_260523_12.jpg" alt="主持人在卡片牆前帶領參與者回顧內容">
+          <figcaption>主持與全場回顧，讓討論逐步收斂到共同問題。</figcaption>
+        </figure>
+      </div>
+
+      <div class="grid two section-spacer">
+        <article class="card">
+          <span class="eyebrow">DIA Context</span>
+          <h3>對話影響力的延伸</h3>
+          <p>「對話影響力獎」強調以平等待人、同理聆聽、浮現假設與包容差異促成組織或社會正向改變。本工作坊將此精神延伸到 AI 時代：越是工具加速，越需要人與人共同定義價值與責任。</p>
+          <p class="note">歷屆完整得獎名單與專案細節以主辦單位公開資料為準；本網站只摘錄與敏捷、組織轉型、對話文化及 AI 協作高度相關的脈絡。</p>
+        </article>
+        <article class="card">
+          <span class="eyebrow">Opening Activity</span>
+          <h3>共創一棵樹</h3>
+          <p>開場活動讓每位參與者輪流在既有樹幹上畫出樹枝與樹根。最後樹根大於樹冠，成為工作坊的隱喻：AI敏捷組織要長得快，根基必須更深。</p>
+          <div class="badge-row">
+            <span class="mini-badge">基本框架</span>
+            <span class="mini-badge">不可預測共創</span>
+            <span class="mini-badge">每人一筆</span>
+          </div>
+        </article>
+      </div>
+
+      <div class="table-card section-spacer">
+        <table>
+          <thead>
+            <tr>
+              <th>脈絡</th>
+              <th>現場觀察</th>
+              <th>對原則的啟發</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>AI工具快速普及</td>
+              <td>從寫作、出版、設計、產品、工程到會議摘要，AI 已進入日常工作。</td>
+              <td>將 AI 列為解決問題的首要選項，但保留是否導入的判斷。</td>
+            </tr>
+            <tr>
+              <td>組織壓力升高</td>
+              <td>AI 讓追蹤、KPI、交付與問責速度加快，也增加焦慮與品質風險。</td>
+              <td>AI 負責產出，人為結果負責；節奏、審查與心理安全要一起設計。</td>
+            </tr>
+            <tr>
+              <td>社群需要方法論</td>
+              <td>許多人已有 AI 使用經驗，但缺乏可交流、可複製、可治理的共同語言。</td>
+              <td>善用 AI 提升知識與決策品質，累積個人知識與集體智慧。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel" id="panel-scan" role="tabpanel" aria-labelledby="tab-scan" tabindex="0">
+      <div class="section-head">
+        <div>
+          <p class="kicker">Stage 01 / AI Scan & Insight</p>
+          <h2>AI環境掃描與洞察。</h2>
+        </div>
+        <p class="section-deck">第一階段把會前問卷與現場討論轉成三層卡片：企業內部、台灣產業與政策、全球 AI 趨勢。目的不是比誰知道更多新聞，而是找出會改變組織行動的訊號。</p>
+      </div>
+
+      <div class="grid three">
+        <article class="card">
+          <span class="eyebrow">Yellow</span>
+          <h3>企業與團隊現況</h3>
+          <p>AI導入、產品開發、資安攻擊、管理壓力、工作流程重塑、團隊品質審查與人才培訓。</p>
+        </article>
+        <article class="card">
+          <span class="eyebrow">Green</span>
+          <h3>台灣產業與政策</h3>
+          <p>AI補助、人才課程、AI評測中心、人工智慧基本法、金融與資安指引、資料治理與產業政策。</p>
+        </article>
+        <article class="card">
+          <span class="eyebrow">Blue</span>
+          <h3>全球 AI 趨勢</h3>
+          <p>生成式 AI、Agent、AIFactory、AI晶片、開源模型、推理模型、多模態與法規治理。</p>
+        </article>
+      </div>
+
+      <div class="photo-grid section-spacer" aria-label="AI環境掃描現場照片">
+        <figure class="photo-card full">
+          <img src="assets/photos/LINE_ALBUM_2026523_260523_3.jpg" alt="AI環境掃描與洞察趨勢卡片牆">
+          <figcaption>AI環境掃描與洞察趨勢卡片牆：把全球、政策與企業訊號排進時間軸。</figcaption>
+        </figure>
+        <figure class="photo-card tall">
+          <img src="assets/photos/LINE_ALBUM_2026523_260523_1.jpg" alt="參與者在藍色卡片牆前寫下想法">
+          <figcaption>個人觀點貼上共同牆面，從事件轉成可討論的訊號。</figcaption>
+        </figure>
+        <figure class="photo-card wide">
+          <img src="assets/photos/LINE_ALBUM_2026523_260523_4.jpg" alt="兩位參與者指著卡片牆討論趨勢">
+          <figcaption>共同檢視趨勢與假設，確認時間、分類與關聯。</figcaption>
+        </figure>
+        <figure class="photo-card">
+          <img src="assets/photos/LINE_ALBUM_2026523_260523_5.jpg" alt="講者在藍色卡片牆前說明黃色便利貼內容">
+          <figcaption>趨勢卡片導讀與現場補充。</figcaption>
+        </figure>
+        <figure class="photo-card">
+          <img src="assets/photos/LINE_ALBUM_2026523_260523_13.jpg" alt="參與者拿麥克風在AI環境掃描卡片牆前分享">
+          <figcaption>卡片牆前的洞察分享。</figcaption>
+        </figure>
+      </div>
+
+      <div class="timeline section-spacer">
+        <div class="time-row">
+          <b>2022</b>
+          <p>開源模型、開發者社群與生成式工具擴散；現場以 Hugging Face 普及作為早期訊號。</p>
+        </div>
+        <div class="time-row">
+          <b>2023</b>
+          <p>GPT-4、Copilot、Stable Diffusion 等工具讓生成內容與 AI 輔助開發進入主流討論；企業開始將 AI 放入內部工作流。</p>
+        </div>
+        <div class="time-row">
+          <b>2024</b>
+          <p>多模態與文生影像/影片推進；台灣成立 AI 產品與系統評測機制，歐盟 AI Act 進入施行前準備。</p>
+        </div>
+        <div class="time-row">
+          <b>2025</b>
+          <p>Agent、Product Builder、AI native 開發、開源蒸餾與企業實驗擴大；人工智慧基本法草案到三讀通過。</p>
+        </div>
+        <div class="time-row">
+          <b>2026</b>
+          <p>AI基本法於台灣公布施行；企業關注多代理、內部小系統、資料治理、算力成本、AI資安與跨角色協作。</p>
+        </div>
+      </div>
+
+      <div class="table-card section-spacer">
+        <table>
+          <thead>
+            <tr>
+              <th>掃描洞察</th>
+              <th>現場摘要</th>
+              <th>組織意義</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>AI進入 Agent 與工作流時代</td>
+              <td>AI 從問答轉向可執行任務、串接工具與協助完成跨步驟工作。</td>
+              <td>組織要設計權限、資料、審查與回饋，而非只訓練個人下 prompt。</td>
+            </tr>
+            <tr>
+              <td>效率提升伴隨品質風險</td>
+              <td>快速產碼、快速生成內容與會議摘要提高速度，也可能帶來低品質與錯誤責任問題。</td>
+              <td>需要分步審查、Definition of Done、人工簽核與可追溯紀錄。</td>
+            </tr>
+            <tr>
+              <td>資安從邊界防禦走向即時治理</td>
+              <td>提示注入、社交工程、高權限帳號與假網站成為討論焦點。</td>
+              <td>AI導入必須與身份權限、監控、供應鏈與資料外洩防護一起規劃。</td>
+            </tr>
+            <tr>
+              <td>政策與合規成為市場門檻</td>
+              <td>台灣 AI基本法、AI評測中心、歐盟 AI Act、資安治理、資料來源與責任鏈被反覆提及。</td>
+              <td>創新與治理不能分開排程；資料來源、責任與審核要在 POC 前定義。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel" id="panel-future" role="tabpanel" aria-labelledby="tab-future" tabindex="0">
+      <div class="section-head">
+        <div>
+          <p class="kicker">Stage 02 / Future Scenarios</p>
+          <h2>AI環境未來趨勢。</h2>
+        </div>
+        <p class="section-deck">第二階段用情境規劃處理不確定性。重點不是預言單一未來，而是讓組織在多種可能中看見風險、機會與需要先建立的能力。</p>
+      </div>
+
+      <div class="grid two">
+        <article class="card">
+          <span class="eyebrow">Matrix A</span>
+          <h3>變革速度 × 智慧重構</h3>
+          <p>若變革加速且知識持續累加，產品、服務與組織流程可能快速突破；若變革加速但缺乏智慧累積，則成本失控、品質退化與同質化風險上升。</p>
+        </article>
+        <article class="card">
+          <span class="eyebrow">Matrix B</span>
+          <h3>組織重構速度 × 人機協作強度</h3>
+          <p>若組織重構慢且 AI 只被當工具，人的上限會限制 AI 上限；若重構快且協作強，則需要更成熟的原則、責任鏈與管理品味。</p>
+        </article>
+      </div>
+
+      <div class="canvas-grid section-spacer">
+        <article class="canvas-cell">
+          <h4>右上：高變革 × 高智慧</h4>
+          <p>產品、服務與組織流程突破，組織快速學習，AI成為知識累積與決策支援的放大器。</p>
+        </article>
+        <article class="canvas-cell">
+          <h4>右下：高變革 × 低智慧</h4>
+          <p>快速導入但缺乏判準，導致成本失控、品質下降、AI寫給AI看、責任模糊。</p>
+        </article>
+        <article class="canvas-cell">
+          <h4>左上：低變革 × 高智慧</h4>
+          <p>保留職人精神與深度專業，可能形成高品味、高信任、差異化的人本服務。</p>
+        </article>
+        <article class="canvas-cell">
+          <h4>左下：低變革 × 低智慧</h4>
+          <p>流程僵化、資料破碎、人才能力停滯，AI 只是外部壓力而非內部能力。</p>
+        </article>
+      </div>
+
+      <div class="grid three section-spacer">
+        <article class="card">
+          <span class="eyebrow">Future Signal</span>
+          <h3>去中間化</h3>
+          <p>AI 代理可能改變 App、通路、中階管理與資訊轉譯角色，但影響程度需以產業情境驗證。</p>
+        </article>
+        <article class="card">
+          <span class="eyebrow">Future Signal</span>
+          <h3>AI Supervisor</h3>
+          <p>AI 可作為主管助理進行追蹤、提醒、彙整與回饋；但價值判準、品味與人際責任仍需人類主管設定。</p>
+        </article>
+        <article class="card">
+          <span class="eyebrow">Future Signal</span>
+          <h3>Product Builder</h3>
+          <p>資訊蒐集、問題釐清、原型生成、使用者驗收被 AI 壓縮週期；這是個案趨勢，不應直接泛化為所有團隊。</p>
+        </article>
+      </div>
+
+      <div class="quote-card section-spacer">
+        情境不是預測，而是讓組織提前練習判斷：哪些能力無論未來怎麼走都值得先建立？
+      </div>
+
+      <div class="photo-grid section-spacer" aria-label="未來情境規劃現場照片">
+        <figure class="photo-card wide">
+          <img src="assets/photos/LINE_ALBUM_2026523_260523_6.jpg" alt="情境矩陣與便利貼討論成果">
+          <figcaption>情境矩陣與分組收斂：把趨勢交叉成四種可能未來。</figcaption>
+        </figure>
+        <figure class="photo-card">
+          <img src="assets/photos/S__28164118_0.jpg" alt="參與者在大型卡片牆前指向不同趨勢卡">
+          <figcaption>全場共同回看趨勢脈絡，挑出可推演的關鍵軸線。</figcaption>
+        </figure>
+        <figure class="photo-card full">
+          <img src="assets/photos/S__28164117_0.jpg" alt="參與者沿著大型卡片牆站立並指向不同工作坊成果">
+          <figcaption>把牆面當作共同記憶，逐步看見趨勢、情境與行動。</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="panel" id="panel-principles" role="tabpanel" aria-labelledby="tab-principles" tabindex="0">
+      <div class="section-head">
+        <div>
+          <p class="kicker">2026 Final Principles</p>
+          <h2>一核心三原則，八項<br>行動準則。</h2>
+        </div>
+        <p class="section-deck">以下定位為「2026 工作坊共創版行動原則」，作為組織導入 AI 與敏捷協作的行動參考；不是法律標準或產業正式規範。</p>
+      </div>
+
+      <div class="principle-strip">
+        <article class="principle">
+          <strong>01</strong>
+          <h4>驅動AI賦能，開創高效生活與幸福職場</h4>
+          <p>把 AI 作為改善工作與生活的能力，而不是只用來壓縮人力與追趕速度。</p>
+        </article>
+        <article class="principle">
+          <strong>02</strong>
+          <h4>人定義價值，AI放大效益</h4>
+          <p>由人定義目標、價值、倫理與影響，再讓 AI 放大分析、創作、協作與交付效益。</p>
+        </article>
+        <article class="principle">
+          <strong>03</strong>
+          <h4>將AI列為解決問題的首要選項</h4>
+          <p>先評估 AI 是否能提升效率、品質或可近性，再決定是否導入，不把 AI 當成唯一答案。</p>
+        </article>
+        <article class="principle">
+          <strong>04</strong>
+          <h4>善用AI提升知識與決策品質</h4>
+          <p>用 AI 協助蒐集、比較、整理與提出假設，但以資料、判準、回饋與審查提升決策。</p>
+        </article>
+        <article class="principle">
+          <strong>05</strong>
+          <h4>人與人的互動能更豐富AI的協作</h4>
+          <p>跨角色對話、情境揭露與專業判斷能讓 AI 取得更完整脈絡，避免單一視角輸出。</p>
+        </article>
+        <article class="principle">
+          <strong>06</strong>
+          <h4>AI負責產出，人為結果負責</h4>
+          <p>AI 可以產出初稿、分析與建議；使用者、審核者與組織仍要對結果、影響與承諾負責。</p>
+        </article>
+        <article class="principle">
+          <strong>07</strong>
+          <h4>給予AI原則性指導</h4>
+          <p>提供目標、邊界、資料來源、風險限制與驗收標準，而不只是零碎命令。</p>
+        </article>
+        <article class="principle">
+          <strong>08</strong>
+          <h4>高品質的輸入產生高品質的結果</h4>
+          <p>高品質輸入需包含脈絡、資料、判準與審查；輸入好不代表自動正確，仍要驗證。</p>
+        </article>
+      </div>
+
+      <div class="photo-grid section-spacer" aria-label="2026 AI敏捷組織行動原則定稿照片">
+        <figure class="photo-card wide">
+          <img src="assets/photos/LINE_ALBUM_2026523_260523_7.jpg" alt="AI敏捷組織行動原則草稿牆">
+          <figcaption>2026 AI敏捷組織行動原則草擬：從分組文字走向共同定稿。</figcaption>
+        </figure>
+        <figure class="photo-card">
+          <img src="assets/photos/LINE_ALBUM_2026523_260523_8.jpg" alt="工作坊成員站在AI敏捷組織行動原則成果牆前合照">
+          <figcaption>原則牆前的共同收束。</figcaption>
+        </figure>
+        <figure class="photo-card">
+          <img src="assets/photos/LINE_ALBUM_2026523_260523_9.jpg" alt="工作坊成員在AI敏捷組織行動原則牆前比出手勢合照">
+          <figcaption>2026 行動原則共創完成。</figcaption>
+        </figure>
+        <figure class="photo-card full">
+          <img src="assets/photos/LINE_ALBUM_2026523_260523_10.jpg" alt="工作坊參與者拿著同理聆聽、浮現假設與平等待人標語合照">
+          <figcaption>成果合照：同理聆聽、浮現假設、平等待人，也呼應 AI 敏捷組織的核心精神。</figcaption>
+        </figure>
+      </div>
+
+      <div class="table-card section-spacer">
+        <table>
+          <thead>
+            <tr>
+              <th>分類</th>
+              <th>原則</th>
+              <th>行動句</th>
+              <th>檢核問題</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>核心價值</td>
+              <td>1, 2</td>
+              <td>先問「這會讓人更能工作、更能生活、更能被照顧嗎？」</td>
+              <td>價值由誰定義？受影響的人是否被看見？</td>
+            </tr>
+            <tr>
+              <td>決策原則</td>
+              <td>3, 4</td>
+              <td>每個問題先做 AI 可行性評估，再用資料與回饋決策。</td>
+              <td>AI 是否真的比既有自動化更適合？決策判準是什麼？</td>
+            </tr>
+            <tr>
+              <td>協作原則</td>
+              <td>5, 6</td>
+              <td>把 AI 放進團隊協作鏈，明確誰提問、誰審查、誰承擔。</td>
+              <td>是否有人工審核節點？是否能回溯輸入與輸出？</td>
+            </tr>
+            <tr>
+              <td>AI治理原則</td>
+              <td>7, 8</td>
+              <td>用原則、資料品質、權限與驗收標準管理 AI。</td>
+              <td>資料能否使用？風險邊界是否清楚？結果如何驗證？</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel" id="panel-agile" role="tabpanel" aria-labelledby="tab-agile" tabindex="0">
+      <div class="section-head">
+        <div>
+          <p class="kicker">Agile References</p>
+          <h2>敏捷行動準則與 AI 時代延伸。</h2>
+        </div>
+        <p class="section-deck">敏捷不是盲目更快，而是在不確定中持續交付價值、檢查事實、調整行動。AI敏捷組織把這種精神延伸到人機協作、資料治理與責任設計。</p>
+      </div>
+
+      <div class="grid two">
+        <article class="card">
+          <span class="eyebrow">Agile Manifesto</span>
+          <h3>四個敏捷價值</h3>
+          <ul>
+            <li>個人與互動，重於流程與工具。</li>
+            <li>可用的成果，重於詳盡的文件。</li>
+            <li>與客戶合作，重於合約協商。</li>
+            <li>回應變化，重於遵循計劃。</li>
+          </ul>
+          <p class="note">套用到 AI：工具很重要，但人與互動仍是價值判斷與責任承擔的核心。</p>
+        </article>
+        <article class="card">
+          <span class="eyebrow">Scrum & Lean</span>
+          <h3>透明、檢視、調適</h3>
+          <p>Scrum 以透明、檢視、調適支撐經驗主義；Lean 聚焦減少浪費與看見真正價值。AI導入也應讓工作可見、讓品質可檢查、讓流程可調整。</p>
+          <p class="note">AI 不該成為黑箱捷徑，而要讓輸入、輸出、審查與決策依據更清楚。</p>
+        </article>
+      </div>
+
+      <div class="grid three section-spacer">
+        <article class="card">
+          <span class="eyebrow">Lean Thinking</span>
+          <h3>從價值流出發</h3>
+          <p>AI導入前先看價值流：哪個等待、重工、轉貼、查找、審核或交接正在消耗人？若傳統自動化即可解決，就不必用昂貴 AI。</p>
+        </article>
+        <article class="card">
+          <span class="eyebrow">DevOps / DORA</span>
+          <h3>讓 AI 進入工程紀律</h3>
+          <p>AI agent 產出也要納入版本控制、測試、自動化部署、資安左移、可觀測性與回復機制，避免速度犧牲可靠性。</p>
+        </article>
+        <article class="card">
+          <span class="eyebrow">Data Interop</span>
+          <h3>資料脈絡要能互通</h3>
+          <p>組織若要真正放大 AI 效益，需要資料標準、系統介接、權限控管與可追溯交換流程，不能只靠前端表單或零散文件。</p>
+        </article>
+      </div>
+
+      <div class="photo-grid section-spacer" aria-label="敏捷延伸現場照片">
+        <figure class="photo-card wide">
+          <img src="assets/photos/LINE_ALBUM_2026523_260523_2.jpg" alt="小組圍桌討論AI敏捷組織議題">
+          <figcaption>敏捷精神回到人與互動：用對話補足 AI 無法自行理解的脈絡。</figcaption>
+        </figure>
+        <figure class="photo-card">
+          <img src="assets/photos/LINE_ALBUM_2026523_260523_11.jpg" alt="工作坊成員拿著對話標語與卡片牆合照">
+          <figcaption>同理、探詢與平等，讓 AI 協作不只是工具效率。</figcaption>
+        </figure>
+      </div>
+
+      <div class="table-card section-spacer">
+        <table>
+          <thead>
+            <tr>
+              <th>傳統敏捷精神</th>
+              <th>AI敏捷組織延伸</th>
+              <th>落地做法</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>早期且持續交付價值</td>
+              <td>用 AI 快速產生可檢視的初稿、原型與分析。</td>
+              <td>30 天小實驗、Demo、使用者回饋。</td>
+            </tr>
+            <tr>
+              <td>歡迎變更需求</td>
+              <td>用 AI 協助重整假設與方案，但保留價值判斷。</td>
+              <td>假設清單、情境矩陣、決策紀錄。</td>
+            </tr>
+            <tr>
+              <td>面對面溝通</td>
+              <td>人與人的互動提供脈絡、情緒、利害關係與專業品味。</td>
+              <td>對話原則、會議摘要人審、跨角色 Review。</td>
+            </tr>
+            <tr>
+              <td>技術卓越與好設計</td>
+              <td>AI產出仍需工程品質、資安、資料治理與可維護性。</td>
+              <td>Definition of Done、測試、權限、稽核。</td>
+            </tr>
+            <tr>
+              <td>定期反思並調整</td>
+              <td>把 AI 使用經驗、失敗案例、提示與資料脈絡變成組織知識。</td>
+              <td>AI Retrospective、案例庫、Prompt/Context 版本管理。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="grid four section-spacer">
+        <article class="card">
+          <span class="eyebrow">Modern Agile</span>
+          <h3>Make People Awesome</h3>
+          <p>AI導入要讓客戶、同仁與夥伴更有能力，而不是只讓管理更容易追蹤。</p>
+        </article>
+        <article class="card">
+          <span class="eyebrow">Modern Agile</span>
+          <h3>Make Safety a Prerequisite</h3>
+          <p>資料安全、心理安全與資安要先成為導入條件。</p>
+        </article>
+        <article class="card">
+          <span class="eyebrow">Modern Agile</span>
+          <h3>Experiment & Learn Rapidly</h3>
+          <p>用可失敗的小實驗學習，而不是一次把 AI 推進高風險核心流程。</p>
+        </article>
+        <article class="card">
+          <span class="eyebrow">Modern Agile</span>
+          <h3>Deliver Value Continuously</h3>
+          <p>持續交付可被使用、可被驗證、可被修正的價值。</p>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    AI敏捷組織行動原則工作坊 / 2026 共創記錄 / 現場照片、趨勢掃描、情境規劃與行動原則。
+  </footer>
+
+  <script>
+    const tabs = Array.from(document.querySelectorAll('[role="tab"]'));
+    const panels = Array.from(document.querySelectorAll('[role="tabpanel"]'));
+
+    function activateTab(tab, setFocus = true) {
+      tabs.forEach((item) => {
+        const isActive = item === tab;
+        item.setAttribute('aria-selected', String(isActive));
+        item.tabIndex = isActive ? 0 : -1;
+      });
+
+      panels.forEach((panel) => {
+        const isActive = panel.id === tab.getAttribute('aria-controls');
+        panel.classList.toggle('active', isActive);
+        panel.hidden = !isActive;
+      });
+
+      if (setFocus) {
+        tab.focus();
+      }
+
+      const target = tab.dataset.target;
+      if (target) {
+        history.replaceState(null, '', `#${target}`);
+      }
+    }
+
+    tabs.forEach((tab, index) => {
+      tab.addEventListener('click', () => activateTab(tab, false));
+      tab.addEventListener('keydown', (event) => {
+        const keyMap = {
+          ArrowRight: 1,
+          ArrowDown: 1,
+          ArrowLeft: -1,
+          ArrowUp: -1
+        };
+
+        if (event.key === 'Home') {
+          event.preventDefault();
+          activateTab(tabs[0]);
+          return;
+        }
+
+        if (event.key === 'End') {
+          event.preventDefault();
+          activateTab(tabs[tabs.length - 1]);
+          return;
+        }
+
+        if (keyMap[event.key]) {
+          event.preventDefault();
+          const nextIndex = (index + keyMap[event.key] + tabs.length) % tabs.length;
+          activateTab(tabs[nextIndex]);
+        }
+      });
+    });
+
+    panels.forEach((panel) => {
+      if (!panel.classList.contains('active')) {
+        panel.hidden = true;
+      }
+    });
+
+    const initialHash = decodeURIComponent(window.location.hash.replace('#', ''));
+    const initialTab = tabs.find((tab) => tab.dataset.target === initialHash);
+    if (initialTab) {
+      activateTab(initialTab, false);
+    } else if (initialHash === 'photos') {
+      activateTab(tabs[0], false);
+    }
+  </script>
+</body>
+</html>
