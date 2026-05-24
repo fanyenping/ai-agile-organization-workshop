@@ -845,6 +845,21 @@
     @media (max-width: 980px) {
       .hero {
         min-height: auto;
+        background:
+          linear-gradient(180deg, rgba(16, 24, 32, .72), rgba(16, 24, 32, .92)),
+          url("assets/photos/LINE_ALBUM_2026523_260523_10.jpg") center / cover no-repeat,
+          var(--ink);
+      }
+
+      .hero-photo {
+        object-position: center top;
+        background: transparent;
+      }
+
+      .hero::before {
+        background:
+          linear-gradient(180deg, rgba(16, 24, 32, .82) 0%, rgba(16, 24, 32, .54) 48%, rgba(16, 24, 32, .9) 100%),
+          linear-gradient(90deg, rgba(16, 24, 32, .82), rgba(16, 24, 32, .42));
       }
 
       .hero-inner,
