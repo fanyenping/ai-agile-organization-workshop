@@ -10,7 +10,6 @@
   <meta property="og:description" content="從環境掃描、未來情境到行動原則，凝聚2026 AI敏捷組織的共同準則。">
   <meta property="og:type" content="article">
   <meta property="og:locale" content="zh_TW">
-  <meta property="og:image" content="assets/photos/LINE_ALBUM_2026523_260523_10.jpg">
   <style>
     :root {
       --paper: #f6f0e6;
@@ -121,9 +120,11 @@
       inset: 0;
       width: 100%;
       height: 100%;
-      object-fit: cover;
-      filter: grayscale(.08) contrast(1.06) saturate(.92);
-      opacity: .7;
+      object-fit: contain;
+      object-position: center;
+      filter: grayscale(.08) contrast(1.04) saturate(.9);
+      opacity: .48;
+      background: var(--ink);
     }
 
     .hero::before {
@@ -471,25 +472,32 @@
 
     .feature-image {
       width: 100%;
-      height: 230px;
-      object-fit: cover;
+      aspect-ratio: 16 / 9;
+      box-sizing: border-box;
+      padding: 10px;
+      object-fit: contain;
+      background:
+        linear-gradient(135deg, rgba(255, 255, 255, .9), rgba(238, 244, 242, .7));
       filter: contrast(1.04) saturate(.95);
     }
 
     .photo-grid {
       display: grid;
       grid-template-columns: repeat(12, minmax(0, 1fr));
-      gap: 14px;
+      gap: 18px;
+      width: 100%;
+      margin-inline: auto;
+      align-items: start;
     }
 
     .photo-card {
       position: relative;
       overflow: hidden;
-      min-height: 260px;
       grid-column: span 4;
       border: 1px solid var(--glass-line);
       border-radius: var(--radius);
-      background: rgba(255, 255, 255, .48);
+      background:
+        linear-gradient(135deg, rgba(255, 255, 255, .82), rgba(245, 248, 248, .62));
       box-shadow: var(--soft-shadow);
     }
 
@@ -498,37 +506,85 @@
     }
 
     .photo-card.full {
-      grid-column: span 12;
-      min-height: 360px;
+      grid-column: 1 / -1;
     }
 
     .photo-card.tall {
-      grid-row: span 2;
-      min-height: 540px;
+      grid-column: span 4;
+    }
+
+    .photo-card.pull-right {
+      grid-column: 5 / -1;
+    }
+
+    .photo-card.pull-left {
+      grid-column: 1 / span 8;
     }
 
     .photo-card img {
+      display: block;
       width: 100%;
-      height: 100%;
-      object-fit: cover;
+      height: auto;
+      max-height: 68vh;
+      object-fit: contain;
+      background:
+        linear-gradient(135deg, rgba(255, 255, 255, .8), rgba(235, 238, 240, .72));
       filter: contrast(1.03) saturate(.95);
     }
 
+    .photo-card.full img {
+      max-height: 76vh;
+    }
+
+    .photo-card.tall img {
+      max-height: 620px;
+    }
+
     .photo-card figcaption {
-      position: absolute;
-      left: 12px;
-      right: 12px;
-      bottom: 12px;
-      z-index: 2;
-      padding: 9px 11px;
-      color: #fff;
-      border: 1px solid rgba(255, 255, 255, .22);
-      border-radius: var(--radius);
-      background: rgba(16, 24, 32, .62);
-      -webkit-backdrop-filter: blur(14px) saturate(1.12);
-      backdrop-filter: blur(14px) saturate(1.12);
+      position: static;
+      z-index: 1;
+      margin: 0;
+      padding: 13px 16px 15px;
+      color: var(--ink-soft);
+      border-top: 1px solid var(--line);
+      background: rgba(255, 255, 255, .78);
+      -webkit-backdrop-filter: blur(10px) saturate(1.05);
+      backdrop-filter: blur(10px) saturate(1.05);
       font-size: .9rem;
-      font-weight: 800;
+      line-height: 1.55;
+      font-weight: 850;
+    }
+
+    .inline-photo {
+      overflow: hidden;
+      margin: 18px 0 0;
+      border: 1px solid var(--glass-line);
+      border-radius: var(--radius);
+      background:
+        linear-gradient(135deg, rgba(255, 255, 255, .82), rgba(245, 248, 248, .62));
+      box-shadow: 0 18px 36px rgba(16, 24, 32, .12);
+    }
+
+    .inline-photo img {
+      display: block;
+      width: 100%;
+      height: auto;
+      max-height: 560px;
+      object-fit: contain;
+      background:
+        linear-gradient(135deg, rgba(255, 255, 255, .82), rgba(235, 238, 240, .72));
+      filter: contrast(1.03) saturate(.96);
+    }
+
+    .inline-photo figcaption {
+      margin: 0;
+      padding: 12px 14px 14px;
+      color: var(--ink-soft);
+      border-top: 1px solid var(--line);
+      background: rgba(255, 255, 255, .78);
+      font-size: .88rem;
+      line-height: 1.5;
+      font-weight: 850;
     }
 
     .feature-body {
@@ -804,9 +860,16 @@
       .photo-card,
       .photo-card.wide,
       .photo-card.full,
-      .photo-card.tall {
+      .photo-card.tall,
+      .photo-card.pull-right,
+      .photo-card.pull-left {
         grid-column: auto;
-        min-height: 260px;
+      }
+
+      .photo-card img,
+      .photo-card.full img,
+      .photo-card.tall img {
+        max-height: none;
       }
 
       .hero-inner {
@@ -984,17 +1047,13 @@
       </div>
 
       <div class="quote-card section-spacer">
-        AI加速效率，人守護價值。人定義價值，AI放大效益。
+        AI敏捷組織核心: 人定義價值, AI放大效益
       </div>
 
       <div class="photo-grid section-spacer" aria-label="工作坊封面現場照片">
-        <figure class="photo-card wide">
+        <figure class="photo-card full">
           <img src="assets/photos/S__28164116_0.jpg" alt="參與者在完整卡片牆前合影與互動">
           <figcaption>從掃描到原則，保留現場共創的集體痕跡。</figcaption>
-        </figure>
-        <figure class="photo-card">
-          <img src="assets/photos/LINE_ALBUM_2026523_260523_11.jpg" alt="工作坊成員拿著對話標語與卡片牆合照">
-          <figcaption>同理、探詢與平等對話，是整場工作坊的底層規範。</figcaption>
         </figure>
       </div>
     </section>
@@ -1027,13 +1086,9 @@
       </div>
 
       <div class="photo-grid section-spacer" aria-label="工作坊脈絡現場照片">
-        <figure class="photo-card wide">
-          <img src="assets/photos/LINE_ALBUM_2026523_260523_2.jpg" alt="小組圍桌討論AI敏捷組織議題">
-          <figcaption>分組討論與觀點交換，把個人經驗轉成可被共創的脈絡。</figcaption>
-        </figure>
-        <figure class="photo-card">
-          <img src="assets/photos/LINE_ALBUM_2026523_260523_12.jpg" alt="主持人在卡片牆前帶領參與者回顧內容">
-          <figcaption>主持與全場回顧，讓討論逐步收斂到共同問題。</figcaption>
+        <figure class="photo-card full">
+          <img src="assets/photos/LINE_ALBUM_2026523_260523_15.jpg" alt="主持人在卡片牆前帶領全場回顧工作坊脈絡">
+          <figcaption>主持人與全場回顧，讓討論逐步收斂到共同問題。</figcaption>
         </figure>
       </div>
 
@@ -1053,6 +1108,10 @@
             <span class="mini-badge">不可預測共創</span>
             <span class="mini-badge">每人一筆</span>
           </div>
+          <figure class="inline-photo">
+            <img src="assets/photos/S__28180484.jpg" alt="共創一棵樹活動產出的樹枝與樹根圖像">
+            <figcaption>共創一棵樹：以樹枝與樹根承載平等、善意、原則、行動與關係的現場語彙。</figcaption>
+          </figure>
         </article>
       </div>
 
@@ -1122,17 +1181,21 @@
           <img src="assets/photos/LINE_ALBUM_2026523_260523_1.jpg" alt="參與者在藍色卡片牆前寫下想法">
           <figcaption>個人觀點貼上共同牆面，從事件轉成可討論的訊號。</figcaption>
         </figure>
-        <figure class="photo-card wide">
+        <figure class="photo-card tall">
           <img src="assets/photos/LINE_ALBUM_2026523_260523_4.jpg" alt="兩位參與者指著卡片牆討論趨勢">
           <figcaption>共同檢視趨勢與假設，確認時間、分類與關聯。</figcaption>
         </figure>
-        <figure class="photo-card">
+        <figure class="photo-card tall">
+          <img src="assets/photos/LINE_ALBUM_2026523_260523_18.jpg" alt="參與者在藍色卡片牆前補充趨勢資訊">
+          <figcaption>現場補充趨勢資訊，讓掃描結果更接近共同理解。</figcaption>
+        </figure>
+        <figure class="photo-card wide">
           <img src="assets/photos/LINE_ALBUM_2026523_260523_5.jpg" alt="講者在藍色卡片牆前說明黃色便利貼內容">
           <figcaption>趨勢卡片導讀與現場補充。</figcaption>
         </figure>
-        <figure class="photo-card">
-          <img src="assets/photos/LINE_ALBUM_2026523_260523_13.jpg" alt="參與者拿麥克風在AI環境掃描卡片牆前分享">
-          <figcaption>卡片牆前的洞察分享。</figcaption>
+        <figure class="photo-card tall">
+          <img src="assets/photos/LINE_ALBUM_2026523_260523_12.jpg" alt="主持人在藍色牆面前帶領參與者說明共創脈絡">
+          <figcaption>從共創活動回到環境掃描，建立後續趨勢討論的共同脈絡。</figcaption>
         </figure>
       </div>
 
@@ -1238,7 +1301,7 @@
       <div class="grid three section-spacer">
         <article class="card">
           <span class="eyebrow">Future Signal</span>
-          <h3>去中間化</h3>
+          <h3>去中階化</h3>
           <p>AI 代理可能改變 App、通路、中階管理與資訊轉譯角色，但影響程度需以產業情境驗證。</p>
         </article>
         <article class="card">
@@ -1259,16 +1322,16 @@
 
       <div class="photo-grid section-spacer" aria-label="未來情境規劃現場照片">
         <figure class="photo-card wide">
-          <img src="assets/photos/LINE_ALBUM_2026523_260523_6.jpg" alt="情境矩陣與便利貼討論成果">
-          <figcaption>情境矩陣與分組收斂：把趨勢交叉成四種可能未來。</figcaption>
+          <img src="assets/photos/LINE_ALBUM_2026523_260523_19.jpg" alt="知識與智慧情境矩陣分組成果">
+          <figcaption>知識與智慧情境矩陣：辨識轉型困難、M型組織與人工監控等訊號。</figcaption>
         </figure>
-        <figure class="photo-card">
-          <img src="assets/photos/S__28164118_0.jpg" alt="參與者在大型卡片牆前指向不同趨勢卡">
-          <figcaption>全場共同回看趨勢脈絡，挑出可推演的關鍵軸線。</figcaption>
+        <figure class="photo-card wide">
+          <img src="assets/photos/LINE_ALBUM_2026523_260523_20.jpg" alt="組織重構情境矩陣分組成果">
+          <figcaption>組織重構情境矩陣：討論成本、效率、AI supervisor 與真人 AI 平等合作。</figcaption>
         </figure>
         <figure class="photo-card full">
-          <img src="assets/photos/S__28164117_0.jpg" alt="參與者沿著大型卡片牆站立並指向不同工作坊成果">
-          <figcaption>把牆面當作共同記憶，逐步看見趨勢、情境與行動。</figcaption>
+          <img src="assets/photos/LINE_ALBUM_2026523_260523_21.jpg" alt="真人品味價值情境矩陣分組成果">
+          <figcaption>真人品味價值情境矩陣：把人與 AI 的合作、會議紀錄與正向循環收斂成討論材料。</figcaption>
         </figure>
       </div>
     </section>
@@ -1326,21 +1389,17 @@
       </div>
 
       <div class="photo-grid section-spacer" aria-label="2026 AI敏捷組織行動原則定稿照片">
-        <figure class="photo-card wide">
+        <figure class="photo-card full">
           <img src="assets/photos/LINE_ALBUM_2026523_260523_7.jpg" alt="AI敏捷組織行動原則草稿牆">
           <figcaption>2026 AI敏捷組織行動原則草擬：從分組文字走向共同定稿。</figcaption>
         </figure>
-        <figure class="photo-card">
+        <figure class="photo-card wide">
           <img src="assets/photos/LINE_ALBUM_2026523_260523_8.jpg" alt="工作坊成員站在AI敏捷組織行動原則成果牆前合照">
           <figcaption>原則牆前的共同收束。</figcaption>
         </figure>
-        <figure class="photo-card">
+        <figure class="photo-card wide">
           <img src="assets/photos/LINE_ALBUM_2026523_260523_9.jpg" alt="工作坊成員在AI敏捷組織行動原則牆前比出手勢合照">
           <figcaption>2026 行動原則共創完成。</figcaption>
-        </figure>
-        <figure class="photo-card full">
-          <img src="assets/photos/LINE_ALBUM_2026523_260523_10.jpg" alt="工作坊參與者拿著同理聆聽、浮現假設與平等待人標語合照">
-          <figcaption>成果合照：同理聆聽、浮現假設、平等待人，也呼應 AI 敏捷組織的核心精神。</figcaption>
         </figure>
       </div>
 
@@ -1432,11 +1491,7 @@
       </div>
 
       <div class="photo-grid section-spacer" aria-label="敏捷延伸現場照片">
-        <figure class="photo-card wide">
-          <img src="assets/photos/LINE_ALBUM_2026523_260523_2.jpg" alt="小組圍桌討論AI敏捷組織議題">
-          <figcaption>敏捷精神回到人與互動：用對話補足 AI 無法自行理解的脈絡。</figcaption>
-        </figure>
-        <figure class="photo-card">
+        <figure class="photo-card full">
           <img src="assets/photos/LINE_ALBUM_2026523_260523_11.jpg" alt="工作坊成員拿著對話標語與卡片牆合照">
           <figcaption>同理、探詢與平等，讓 AI 協作不只是工具效率。</figcaption>
         </figure>
